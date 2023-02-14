@@ -1,0 +1,49 @@
+.heroSection {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    /* background-color: black; */
+    width: 100%;
+}
+
+.usp {
+    grid-area: 1 / 2 / 11 / 16;
+    font-family: 'Interstate';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 65px;
+    line-height: 110%;
+    background: linear-gradient(90deg, #4AC7FA 0%, #E649F5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    z-index: 10;
+}
+.backgroundSquare{
+    background-image: url(../../UI/svgIcons/Rectangle.png);
+    background-size: contain;
+    height: 2200vh;
+    width: 200px;
+    background-repeat: no-repeat;
+    grid-area: 9 / 1 / 28 / 12;
+}
+.slogan {
+    grid-area: 9 / 2 / 13 / 12;
+}
+
+.button {
+    grid-area: 13 / 2 ;
+}
+
+.statisticItems {
+    grid-area: 15 / 2 / 15 / 12;
+}
+
+.canvas {
+    grid-area: 1 / 12 / 16 / 26;
+    position: relative;
+
+}

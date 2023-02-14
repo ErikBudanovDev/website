@@ -1,0 +1,13 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5%;
+    font-family: 'Roboto' serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #AEFFF1;
+    border-radius: 8px;
+}

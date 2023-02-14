@@ -1,0 +1,28 @@
+@import url("https://use.typekit.net/nwc5uay.css");
+.Logo{
+    /* max-width: 5%; */
+    max-height: 5%;
+    width: 100px;
+    height: 10px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.navigation{
+    /* width: 60%; */
+    /* align-self: flex-end; */
+    display: flex;
+    column-gap: 20%;
+    /* margin-right: 25%; */
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'interstate';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 17.8px;
+}
