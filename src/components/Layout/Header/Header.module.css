@@ -10,13 +10,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 55px;
+    margin-top: 3%;
 }
 
 .navigation{
     /* width: 60%; */
     /* align-self: flex-end; */
     display: flex;
+    /* margin-top: 500px; */
     column-gap: 20%;
     /* margin-right: 25%; */
     justify-content: space-between;

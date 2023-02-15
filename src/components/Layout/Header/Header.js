@@ -4,11 +4,11 @@ import logo from "/Users/erikb/Desktop/Front-End/ReactProjects/DigidogWeb/websit
 import Image from "next/image";
 export default function Header() {
   return (
-    <header className={`${classes.header} wrapper`}>
+    <header className={`${classes.header}`}>
       <Image
         src={logo}
         alt={"logo"}
-        sizes="(max-width: 992px) 70"
+        sizes="(max-width: 992px) 70; margin-top: 20px"
         width={140}
         height={77.38}
       />
