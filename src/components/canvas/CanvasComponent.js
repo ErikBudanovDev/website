@@ -15,6 +15,9 @@ const angleToRadianse = (angleInDeg) => (Math.PI / 180) * angleInDeg;
 export function Three() {
   const OrbitControlsRef = useRef(null);
   const textureLady = useLoader(THREE.TextureLoader, "digiLady.png");
+  const bckgrnd1 = useLoader(THREE.TextureLoader, "bckgrnd2.png");
+  const bckgrnd2 = useLoader(THREE.TextureLoader, "bckgrnd.png");
+
   const stars = useLoader(THREE.TextureLoader, "stars.png");
 
   useEffect(() => {
@@ -68,6 +71,7 @@ export function Three() {
       </mesh>
       {/* Floating items */}
       <FloatingIntems />
+
       {/* Lady */}
       <sprite
         position={[0, -0.5, 0]}
@@ -84,10 +88,22 @@ export function Three() {
         />
         {/* <planeGeometry args={[2, 2]} /> */}
       </sprite>
+
       <sprite position={[0, 0, 0]} scale={[90, 80, 0]} castShadow>
         <spriteMaterial map={stars} transparent={true} />
         {/* <planeGeometry args={[2, 2]} /> */}
       </sprite>
+
+      {/* Background */}
+      <sprite position={[0, 0, 0]} scale={[3, 2, 4]} castShadow receiveShadow>
+        <spriteMaterial
+          map={bckgrnd1}
+          transparent={true}
+          side={THREE.DoubleSide}
+        />
+        {/* <planeGeometry args={[2, 2]} /> */}
+      </sprite>
+
       {/* The 3D object needs a light */}
       <ambientLight args={["#ffffff", 0.3]} />
       {/* <spotLight
