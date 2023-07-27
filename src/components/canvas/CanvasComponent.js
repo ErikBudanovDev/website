@@ -85,7 +85,9 @@ export function Three() {
         />
         {/* <planeGeometry args={[2, 2]} /> */}
       </sprite>
-      <sprite position={[0, -0.22, 0]} scale={[2.7, 2, 0]} castShadow receiveShadow>
+
+      {/* Vibe */}
+      <sprite position={[0, -0.26, 0]} scale={[2.7, 2, 0]} castShadow receiveShadow>
         <spriteMaterial
           map={bckgrnd1}
           transparent={true}
@@ -95,7 +97,7 @@ export function Three() {
       </sprite>
 
     
-      <sprite position={[0, -0.22, 0]} scale={[2.5, 1.9, 3]} castShadow receiveShadow>
+      <sprite position={[0, -0.26, 0]} scale={[2.5, 1.9, 3]} castShadow receiveShadow>
         <spriteMaterial
           map={bckgrnd2}
           transparent={true}
@@ -125,7 +127,7 @@ export function Three() {
       /> */}
       <spotLight
         args={["#ffffff", 1.5, 7, angleToRadianse(55), 1]}
-        position={[0, 1, 0]}
+        position={[-0.5, -1, 3]}
         // castShadow
       />
       <spotLight
