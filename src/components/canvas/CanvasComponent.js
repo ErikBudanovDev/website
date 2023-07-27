@@ -54,9 +54,8 @@ export function Three() {
           side={THREE.DoubleSide}
         />
       </mesh>
-      <mesh
+      <mesh position={[0, -0.4, 0]}
         rotation={[-angleToRadianse(90), 0, 0]}
-        position={[0, -0.4, 0]}
         receiveShadow
         castShadow
       >
@@ -76,8 +75,6 @@ export function Three() {
       <sprite
         position={[0, -0.5, 0]}
         scale={[1.4, 1.4, 0]}
-        castShadow
-        receiveShadow
       >
         <spriteMaterial
           map={textureLady}
@@ -88,14 +85,7 @@ export function Three() {
         />
         {/* <planeGeometry args={[2, 2]} /> */}
       </sprite>
-
-      <sprite position={[0, 0, 0]} scale={[90, 80, 0]} castShadow>
-        <spriteMaterial map={stars} transparent={true} />
-        {/* <planeGeometry args={[2, 2]} /> */}
-      </sprite>
-
-      {/* Background */}
-      <sprite position={[0, 0, 0]} scale={[3, 2, 4]} castShadow receiveShadow>
+      <sprite position={[0, -0.22, 0]} scale={[2.7, 2, 0]} castShadow receiveShadow>
         <spriteMaterial
           map={bckgrnd1}
           transparent={true}
@@ -103,6 +93,28 @@ export function Three() {
         />
         {/* <planeGeometry args={[2, 2]} /> */}
       </sprite>
+
+    
+      <sprite position={[0, -0.22, 0]} scale={[2.5, 1.9, 3]} castShadow receiveShadow>
+        <spriteMaterial
+          map={bckgrnd2}
+          transparent={true}
+          side={THREE.DoubleSide}
+        />
+        {/* <planeGeometry args={[2, 2]} /> */}
+      </sprite> 
+
+      {/* STARS */}
+      <sprite position={[0, 0, 0]} scale={[90, 80, 0]} castShadow>
+        <spriteMaterial map={stars} transparent={true} side={THREE.DoubleSide}/>
+        {/* <planeGeometry args={[2, 2]} /> */}
+      </sprite>
+
+
+     
+      
+      
+    
 
       {/* The 3D object needs a light */}
       <ambientLight args={["#ffffff", 0.3]} />

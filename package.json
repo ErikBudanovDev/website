@@ -11,10 +11,13 @@
   "dependencies": {
     "@next/font": "13.1.6",
     "@next/swc-darwin-arm64": "^13.2.1",
+    "@react-three/drei": "^9.80.0",
+    "@react-three/fiber": "^8.13.6",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "three": "^0.154.0"
   }
 }
